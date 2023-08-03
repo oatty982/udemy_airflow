@@ -1,0 +1,16 @@
+[2023-06-22T06:26:45.563+0000] {processor.py:154} INFO - Started process (PID=33) to work on /opt/airflow/dags/user_processing.py
+[2023-06-22T06:26:45.569+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/user_processing.py for tasks to queue
+[2023-06-22T06:26:45.570+0000] {logging_mixin.py:120} INFO - [2023-06-22T06:26:45.570+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/user_processing.py
+[2023-06-22T06:26:45.869+0000] {logging_mixin.py:120} INFO - [2023-06-22T06:26:45.863+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/user_processing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/user_processing.py", line 10, in <module>
+    task_id='create_table'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 391, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2023-06-22T06:26:45.870+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/user_processing.py
+[2023-06-22T06:26:45.884+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/user_processing.py took 0.324 seconds

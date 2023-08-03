@@ -1,0 +1,10 @@
+[2023-07-31T18:50:38.916+0000] {processor.py:154} INFO - Started process (PID=18186) to work on /opt/airflow/dags/customer.py
+[2023-07-31T18:50:38.917+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/customer.py for tasks to queue
+[2023-07-31T18:50:38.918+0000] {logging_mixin.py:120} INFO - [2023-07-31T18:50:38.918+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/customer.py
+[2023-07-31T18:50:38.934+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/customer.py
+[2023-07-31T18:50:38.948+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/customer.py took 0.035 seconds
+[2023-07-31T18:51:09.553+0000] {processor.py:154} INFO - Started process (PID=18252) to work on /opt/airflow/dags/customer.py
+[2023-07-31T18:51:09.555+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/customer.py for tasks to queue
+[2023-07-31T18:51:09.556+0000] {logging_mixin.py:120} INFO - [2023-07-31T18:51:09.556+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/customer.py
+[2023-07-31T18:51:09.570+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/customer.py
+[2023-07-31T18:51:09.582+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/customer.py took 0.032 seconds

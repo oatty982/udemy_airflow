@@ -1,0 +1,11 @@
+[2023-06-22T06:26:50.923+0000] {processor.py:154} INFO - Started process (PID=71) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_complex.py
+[2023-06-22T06:26:50.937+0000] {processor.py:756} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2023-06-22T06:26:50.943+0000] {logging_mixin.py:120} INFO - [2023-06-22T06:26:50.942+0000] {dagbag.py:537} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_complex.py
+[2023-06-22T06:26:50.976+0000] {logging_mixin.py:120} INFO - [2023-06-22T06:26:50.975+0000] {taskmixin.py:205} WARNING - Dependency <Task(BashOperator): create_entry_group>, delete_entry_group already registered for DAG: example_complex
+[2023-06-22T06:26:50.977+0000] {logging_mixin.py:120} INFO - [2023-06-22T06:26:50.977+0000] {taskmixin.py:205} WARNING - Dependency <Task(BashOperator): delete_entry_group>, create_entry_group already registered for DAG: example_complex
+[2023-06-22T06:26:50.977+0000] {logging_mixin.py:120} INFO - [2023-06-22T06:26:50.977+0000] {taskmixin.py:205} WARNING - Dependency <Task(BashOperator): create_entry_gcs>, delete_entry already registered for DAG: example_complex
+[2023-06-22T06:26:50.977+0000] {logging_mixin.py:120} INFO - [2023-06-22T06:26:50.977+0000] {taskmixin.py:205} WARNING - Dependency <Task(BashOperator): delete_entry>, create_entry_gcs already registered for DAG: example_complex
+[2023-06-22T06:26:50.978+0000] {logging_mixin.py:120} INFO - [2023-06-22T06:26:50.978+0000] {taskmixin.py:205} WARNING - Dependency <Task(BashOperator): create_tag>, delete_tag already registered for DAG: example_complex
+[2023-06-22T06:26:50.980+0000] {logging_mixin.py:120} INFO - [2023-06-22T06:26:50.980+0000] {taskmixin.py:205} WARNING - Dependency <Task(BashOperator): delete_tag>, create_tag already registered for DAG: example_complex
+[2023-06-22T06:26:50.990+0000] {processor.py:766} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_complex.py
+[2023-06-22T06:26:51.584+0000] {logging_mixin.py:120} INFO - [2023-06-22T06:26:51.584+0000] {process_utils.py:256} INFO - Waiting up to 5 seconds for processes to exit...
